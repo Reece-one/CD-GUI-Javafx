@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox maxWidth="1.7976931348623157E308">
+         <children>
+            <Label text="Title: ">
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin></Label>
+            <TextField fx:id="titleField" HBox.hgrow="ALWAYS">
+               <HBox.margin>
+                  <Insets bottom="5.0" left="8.0" right="5.0" top="5.0" />
+               </HBox.margin></TextField>
+         </children>
+      </HBox>
+      <HBox maxWidth="1.7976931348623157E308">
+         <children>
+            <Label text="Artist:">
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin></Label>
+            <TextField fx:id="artistField" HBox.hgrow="ALWAYS">
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin></TextField>
+         </children>
+      </HBox>
+      <CheckBox fx:id="ownBox" mnemonicParsing="false" text="Own">
+         <VBox.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </VBox.margin></CheckBox>
+      <Label fx:id="playTimeLbl" text="Playing time: X" />
+      <Slider fx:id="playTimeSld" blockIncrement="1.0" majorTickUnit="60.0" max="360.0" showTickLabels="true" showTickMarks="true">
+         <VBox.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </VBox.margin></Slider>
+      <Label fx:id="trackNumberLbl" text="Number of tracks: Y" />
+      <Slider fx:id="trackNumberSld" blockIncrement="1.0" majorTickUnit="5.0" max="40.0" maxHeight="1.7976931348623157E308" showTickLabels="true" showTickMarks="true" VBox.vgrow="NEVER">
+         <VBox.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </VBox.margin></Slider>
+      <AnchorPane VBox.vgrow="ALWAYS" />
+      <HBox alignment="BOTTOM_CENTER" spacing="5.0" VBox.vgrow="NEVER">
+         <children>
+            <Button mnemonicParsing="false" onAction="#createPressed" text="Create">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin></Button>
+            <Button mnemonicParsing="false" onAction="#cancelPressed" text="Cancel" />
+         </children>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </HBox>
+   </children>
+</VBox>
